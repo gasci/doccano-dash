@@ -1,0 +1,42 @@
+[
+  {
+    "id": 5,
+    "text": "Disease",
+    "prefixKey": null,
+    "suffixKey": "0",
+    "backgroundColor": "#B71C1C",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 6,
+    "text": "Person",
+    "prefixKey": null,
+    "suffixKey": "1",
+    "backgroundColor": "#F57F17",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 7,
+    "text": "Symptom",
+    "prefixKey": null,
+    "suffixKey": "2",
+    "backgroundColor": "#2196F3",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 8,
+    "text": "Treatment",
+    "prefixKey": null,
+    "suffixKey": "4",
+    "backgroundColor": "#9C27B0",
+    "textColor": "#ffffff"
+  },
+  {
+    "id": 9,
+    "text": "Age",
+    "prefixKey": null,
+    "suffixKey": "3",
+    "backgroundColor": "#F9A825",
+    "textColor": "#ffffff"
+  }
+]
