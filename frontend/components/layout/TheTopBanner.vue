@@ -12,10 +12,10 @@
         class="white--text"
       >
         <v-flex>
-          <h1 class="mb-2 display-1 text-xs-center">
+          <h1 class="mb-2 display-1 text-center">
             {{ $t('home.mainTitle') }}
           </h1>
-          <div class="mt-4">
+          <div class="mt-4 text-center">
             <v-btn
               large
               outlined

@@ -1,15 +1,15 @@
 # Project information
 site_name: 'doccano'
 site_description: 'A Text Annotation tool for Humans'
-site_author: 'Hiroki Nakayama'
+site_author: 'Göktuğ Aşcı'
 site_url: 'https://doccano.github.io/doccano/'
 
 # Repository
-repo_name: 'doccano/doccano'
-repo_url: 'https://github.com/doccano/doccano'
+repo_name: 'gasci/doccano-dash'
+repo_url: 'https://github.com/gasci/doccano-dash'
 
 # Copyright
-copyright: 'Copyright &copy; 2018 - 2019 Hiroki Nakayama'
+copyright: 'Copyright &copy; 2021 Göktuğ Aşcı'
 
 theme:
   name: 'material'

@@ -5,11 +5,11 @@ import os
 
 from setuptools import find_packages, setup
 
-NAME = 'doccano'
-DESCRIPTION = 'doccano, text annotation tool for machine learning practitioners'
-URL = 'https://github.com/doccano/doccano'
-EMAIL = 'hiroki.nakayama.py@gmail.com'
-AUTHOR = 'Hironsan'
+NAME = 'healdash'
+DESCRIPTION = 'healdash, text annotation tool for machine learning practitioners'
+URL = 'https://github.com/gasci/doccano-dash'
+EMAIL = 'drgoktugasci@gmail.com'
+AUTHOR = 'Göktuğ Aşcı'
 LICENSE = 'MIT'
 
 here = os.path.abspath(os.path.dirname(__file__))
