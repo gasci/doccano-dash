@@ -3,9 +3,7 @@
     :disabled="!valid"
     :title="$t('user.login')"
     :agree-text="$t('user.login')"
-    :cancel-text="$t('user.register')"
     @agree="tryLogin"
-    @cancel="goToRegister"
   >
     <template #content>
       <v-form v-model="valid">
