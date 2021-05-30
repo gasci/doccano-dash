@@ -180,7 +180,7 @@ See [here](https://healdash.github.io/healdash/).
 
 As with any software, healdash is under continuous development. If you have requests for features, please file an issue describing your request. Also, if you want to see work towards a specific feature, feel free to contribute by working towards it. The standard procedure is to fork the repository, add a feature, fix a bug, then file a pull request that your changes are to be merged into the main repository and included in the next release.
 
-Here are some tips might be helpful. [How to Contribute to healdash Project](https://github.com/healdash/healdash/wiki/How-to-Contribute-to-healdash-Project)
+<!-- Here are some tips might be helpful. [How to Contribute to healdash Project](https://github.com/healdash/healdash/wiki/How-to-Contribute-to-healdash-Project) -->
 
 <!-- ## Citation
 

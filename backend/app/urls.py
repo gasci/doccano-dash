@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 from django.contrib.auth.views import TemplateView
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-
+from authentification.views import RegisterView
 
 # TODO: adds AnnotationList and AnnotationDetail endpoint.
 schema_view = get_schema_view(
@@ -41,7 +41,7 @@ urlpatterns += [
     path('admin/', admin.site.urls),
     path('social/', include('social_django.urls')),
     path('api-auth/', include('rest_framework.urls')),
-    # path('authe/', include('authentification.urls')),
+    path('register', RegisterView.as_view(), name='auth_register'),
     path('v1/', include('api.urls')),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     re_path('', TemplateView.as_view(template_name='index.html')),

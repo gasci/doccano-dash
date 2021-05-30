@@ -33,6 +33,14 @@ export const actions = {
       throw new Error('The credential is invalid')
     }
   },
+  async registerUser({ commit }, authData) {
+    try {
+      console.log(authData)
+      await this.$services.auth.register(authData.username, authData.password1, authData.password2, authData.email)
+    } catch (error) {
+      throw new Error('The credential is invalid')
+    }
+  },
   async initAuth({ commit }) {
     try {
       const user = await this.$services.user.getMyProfile()

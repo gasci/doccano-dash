@@ -12,18 +12,18 @@ export default {
     //   iso: 'zh-CN',
     //   file: 'zh'
     // },
-    {
-      name: 'Français',
-      code: 'fr',
-      iso: 'fr-CA',
-      file: 'fr'
-    },
-    {
-      name: 'Deutsch',
-      code: 'de',
-      iso: 'de-DE',
-      file: 'de'
-    }
+    // {
+    //   name: 'Français',
+    //   code: 'fr',
+    //   iso: 'fr-CA',
+    //   file: 'fr'
+    // },
+    // {
+    //   name: 'Deutsch',
+    //   code: 'de',
+    //   iso: 'de-DE',
+    //   file: 'de'
+    // }
   ],
   lazy: true,
   langDir: 'i18n/',

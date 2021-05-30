@@ -1,11 +1,9 @@
 <template>
   <base-card
     :disabled="!valid"
-    :title="$t('user.login')"
-    :agree-text="$t('user.login')"
-    @agree="tryLogin"
-    :cancel-text="$t('user.register')"
-    @cancel="goToRegister"
+    :title="$t('user.register')"
+    :agree-text="$t('user.register')"
+    @agree="tryRegister"
   >
     <template #content>
       <v-form v-model="valid">
@@ -25,17 +23,35 @@
           prepend-icon="person"
           type="text"
           autofocus
-          @keyup.enter="tryLogin"
+          @keyup.enter="tryRegister"
         />
         <v-text-field
           id="password"
-          v-model="password"
+          v-model="password1"
           :rules="passwordRules($t('rules.passwordRules'))"
           :label="$t('user.password')"
           name="password"
           prepend-icon="lock"
           type="password"
-          @keyup.enter="tryLogin"
+          @keyup.enter="tryRegister"
+        />
+        <v-text-field
+          id="password2"
+          v-model="password2"
+          :rules="passwordRules($t('rules.passwordRules'))"
+          :label="$t('user.password')"
+          name="password2"
+          prepend-icon="lock"
+          type="password"
+          @keyup.enter="tryRegister"
+        />
+        <v-text-field
+          v-model="email"
+          :label="$t('user.email')"
+          name="email"
+          prepend-icon="email"
+          type="email"
+          @keyup.enter="tryRegister"
         />
       </v-form>
     </template>
@@ -53,16 +69,23 @@ export default Vue.extend({
   },
 
   props: {
-    login: {
+    register: {
       type: Function,
-      default: (username: string, password: string) => Promise,
+      default: (
+        username: string,
+        password1: string,
+        password2: string,
+        email: string,
+      ) => Promise,
     },
   },
   data() {
     return {
       valid: false,
       username: "",
-      password: "",
+      password1: "",
+      password2: "",
+      email: "",
       userNameRules,
       passwordRules,
       showError: false,
@@ -70,20 +93,18 @@ export default Vue.extend({
   },
 
   methods: {
-    async tryLogin() {
+    async tryRegister() {
       try {
-        await this.login({
+        await this.register({
           username: this.username,
-          password: this.password,
+          password1: this.password1,
+          password2: this.password2,
+          email: this.email,
         });
-        this.$router.push(this.localePath("/projects"));
       } catch {
         this.showError = true;
       }
     },
-    goToRegister(){
-      this.$router.push(this.localePath("/register"));
-    }
   },
 });
 </script>

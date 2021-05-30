@@ -8,8 +8,18 @@ from .tokens import account_activation_token
 from django.core.mail import EmailMessage
 from django.views.generic import TemplateView
 from django.shortcuts import redirect
-
 from django.conf import settings
+from django.contrib.auth.models import User
+
+from .serializers import RegisterSerializer
+from rest_framework import permissions
+from rest_framework import generics
+
+
+class RegisterView(generics.CreateAPIView):
+    queryset = User.objects.all()
+    permission_classes = (permissions.AllowAny,)
+    serializer_class = RegisterSerializer
 
 
 class SignupView(TemplateView):
