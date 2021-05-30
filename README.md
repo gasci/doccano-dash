@@ -7,6 +7,8 @@
 <!-- [![Codacy Badge](https://app.codacy.com/project/badge/Grade/35ac8625a2bc4eddbff23dbc61bc6abb)](https://www.codacy.com/gh/healdash/healdash/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=healdash/healdash&amp;utm_campaign=Badge_Grade)
 [![healdash CI](https://github.com/healdash/healdash/actions/workflows/ci.yml/badge.svg)](https://github.com/healdash/healdash/actions/workflows/ci.yml) -->
 
+This repo is fork from open the doccano library modified to be used by Turkish medical doctors to crowdsource machine learning models.
+
 healdash is an open source text annotation tool for humans. It provides annotation features for text classification, sequence labeling and sequence to sequence tasks. So, you can create labeled data for sentiment analysis, named entity recognition, text summarization and so on. Just create a project, upload data and start annotating. You can build a dataset in hours.
 
 <!-- ## Demo
@@ -154,10 +156,10 @@ Run Backend API-Tests:
 
 You can run the API-Tests for the backend with the following command:
 ```bash
-docker exec healdash_backend_1 pipenv run app/manage.py test api
+docker exec doccano_backend_1 pipenv run app/manage.py test api
 ```
 
-### Add annotators (optionally)
+<!-- ### Add annotators (optionally)
 
 If you want to add annotators/annotation approvers, see [Frequently Asked Questions](./docs/faq.md)
 
@@ -174,7 +176,7 @@ If you want to add annotators/annotation approvers, see [Frequently Asked Questi
 
 ## Documentation
 
-See [here](https://healdash.github.io/healdash/).
+See [here](https://healdash.github.io/healdash/). -->
 
 ## Contribution
 
@@ -182,13 +184,13 @@ As with any software, healdash is under continuous development. If you have requ
 
 <!-- Here are some tips might be helpful. [How to Contribute to healdash Project](https://github.com/healdash/healdash/wiki/How-to-Contribute-to-healdash-Project) -->
 
-<!-- ## Citation
+## Citation
 
 ```tex
 @misc{healdash,
   title={{healdash}: Text Annotation Tool for Human},
-  url={https://github.com/healdash/healdash},
-  note={Software available from https://github.com/healdash/healdash},
+  url={https://github.com/doccano/doccano},
+  note={Software available from https://github.com/doccano/doccano},
   author={
     Hiroki Nakayama and
     Takahiro Kubo and
@@ -197,8 +199,8 @@ As with any software, healdash is under continuous development. If you have requ
     Xu Liang},
   year={2018},
 }
-``` -->
+```
 
 ## Contact
 
-For help and feedback, please feel free to contact [the author](https://github.com/gasci).
+For help and feedback, please feel free to contact [the original author](https://github.com/doccano).
