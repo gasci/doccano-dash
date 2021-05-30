@@ -187,8 +187,8 @@ As with any software, healdash is under continuous development. If you have requ
 ## Citation
 
 ```tex
-@misc{healdash,
-  title={{healdash}: Text Annotation Tool for Human},
+@misc{doccano,
+  title={{doccano}: Text Annotation Tool for Human},
   url={https://github.com/doccano/doccano},
   note={Software available from https://github.com/doccano/doccano},
   author={
