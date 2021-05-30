@@ -3,8 +3,8 @@
     :disabled="!valid"
     :title="$t('user.login')"
     :agree-text="$t('user.login')"
-    @agree="tryLogin"
     :cancel-text="$t('user.register')"
+    @agree="tryLogin"
     @cancel="goToRegister"
   >
     <template #content>

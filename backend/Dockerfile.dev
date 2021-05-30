@@ -17,6 +17,8 @@ COPY ./Pipfile* /src/
 RUN pip install --upgrade pip && pip install pipenv==2020.11.15 \
     && pipenv install --system --dev
 
+RUN apt-get update && apt-get install -y gettext libgettextpo-dev
+
 COPY tools/ /opt/bin/
 
 ENTRYPOINT [ "/opt/bin/dev-django.sh" ]
