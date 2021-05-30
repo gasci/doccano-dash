@@ -7,9 +7,9 @@
 <!-- [![Codacy Badge](https://app.codacy.com/project/badge/Grade/35ac8625a2bc4eddbff23dbc61bc6abb)](https://www.codacy.com/gh/healdash/healdash/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=healdash/healdash&amp;utm_campaign=Badge_Grade)
 [![healdash CI](https://github.com/healdash/healdash/actions/workflows/ci.yml/badge.svg)](https://github.com/healdash/healdash/actions/workflows/ci.yml) -->
 
-This repo is fork from open the doccano library modified to be used by Turkish medical doctors to crowdsource machine learning models.
+This repo is fork from the open sources doccano repository modified to be used by Turkish medical doctors to crowdsource machine learning models.
 
-healdash is an open source text annotation tool for humans. It provides annotation features for text classification, sequence labeling and sequence to sequence tasks. So, you can create labeled data for sentiment analysis, named entity recognition, text summarization and so on. Just create a project, upload data and start annotating. You can build a dataset in hours.
+Healdash is an open source text annotation tool for humans. It provides annotation features for text classification, sequence labeling and sequence to sequence tasks. So, you can create labeled data for sentiment analysis, named entity recognition, text summarization and so on. Just create a project, upload data and start annotating. You can build a dataset in hours.
 
 <!-- ## Demo
 
@@ -47,25 +47,25 @@ For docker and docker compose, you need to install dependencies:
 To install healdash, simply run:
 
 ```bash
-pip install healdash
+pip install doccano
 ```
 
 After installation, simply run the following command:
 
 ```bash
 # Initialize database.
-healdash init
+doccano init
 # Create a super user.
-healdash createuser --username admin --password pass
+doccano createuser --username admin --password pass
 # Start the webserver.
-healdash webserver --port 8000
+doccano webserver --port 8000
 ```
 
 And in another terminal, run the following command:
 
 ```bash
 # Start the task queue.
-healdash task
+doccano task
 ```
 
 Go to <http://0.0.0.0:8000/>.
@@ -75,18 +75,18 @@ Go to <http://0.0.0.0:8000/>.
 As a one-time setup, create a Docker container as follows:
 
 ```bash
-docker pull healdash/healdash
-docker container create --name healdash \
+docker pull doccano/doccano
+docker container create --name doccano \
   -e "ADMIN_USERNAME=admin" \
   -e "ADMIN_EMAIL=admin@example.com" \
   -e "ADMIN_PASSWORD=password" \
-  -p 8000:8000 healdash/healdash
+  -p 8000:8000 doccano/doccano
 ```
 
 Next, start healdash by running the container:
 
 ```bash
-docker container start healdash
+docker container start doccano
 ```
 
 To stop the container, run `docker container stop healdash -t 5`.
@@ -99,8 +99,8 @@ Go to <http://127.0.0.1:8000/>.
 You need to clone the repository:
 
 ```bash
-git clone https://github.com/healdash/healdash.git
-cd healdash
+git clone https://github.com/gasci/doccano-dash.git
+cd doccano-dash
 ```
 
 _Note for Windows developers:_ Be sure to configure git to correctly handle line endings or you may encounter `status code 127` errors while running the services in future steps. Running with the git config options below will ensure your git directory correctly handles line endings.
@@ -108,7 +108,7 @@ _Note for Windows developers:_ Be sure to configure git to correctly handle line
 Try to use ```docker-compose -f docker-compose.prod.yml build``` and then ```docker-compose -f docker-compose.prod.yml up```
 
 ```bash
-git clone https://github.com/healdash/healdash.git --config core.autocrlf=input
+git clone https://github.com/gasci/doccano-dash.git --config core.autocrlf=input
 ```
 
 #### Production
